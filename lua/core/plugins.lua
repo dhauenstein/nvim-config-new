@@ -30,13 +30,8 @@ local plugins = {
  'williamboman/mason.nvim',
  'williamboman/mason-lspconfig.nvim',
  'neovim/nvim-lspconfig',
- {
-    'numToStr/Comment.nvim',
-    opts = {
-    },
-    lazy = false,
-}
- 
+ { 'numToStr/Comment.nvim', lazy = false },
+ {'akinsho/toggleterm.nvim', version = "*", config = true}
 }
 
 local opts = {}

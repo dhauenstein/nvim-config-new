@@ -1,8 +1,10 @@
-local comment = require('Comment')
-comment.setup({
+require('Comment').setup({
+  toggler = {
+    line = '<leader>//',
+    -- block = '<leader>bc',
+  },
   opleader = {
-        ---Line-comment toggle keymap
-        line = '<leader>/',
-    }
+    line = '<leader>/',
+    -- block = '<leader>b',
   }
-)
+})
