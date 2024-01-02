@@ -29,7 +29,13 @@ local plugins = {
  'rafamadriz/friendly-snippets',
  'williamboman/mason.nvim',
  'williamboman/mason-lspconfig.nvim',
- 'neovim/nvim-lspconfig'
+ 'neovim/nvim-lspconfig',
+ {
+    'numToStr/Comment.nvim',
+    opts = {
+    },
+    lazy = false,
+}
  
 }
 
