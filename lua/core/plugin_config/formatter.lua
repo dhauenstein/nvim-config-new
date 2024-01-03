@@ -60,6 +60,6 @@ require("formatter").setup({
 	},
 })
 
-vim.api.nvim_set_keymap('n', '<leader>f', ':Format<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>F', ':FormatWrite<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>f', ':Format<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<leader>F', ':FormatWrite<CR>', { noremap = true, silent = true })
 

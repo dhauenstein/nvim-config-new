@@ -35,7 +35,7 @@ local plugins = {
 	"neovim/nvim-lspconfig",
 	{ "numToStr/Comment.nvim", lazy = false },
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },
-	{ "ThePrimeagen/harpoon", branch = "harpoon2", requires = { { "nvim-lua/plenary.nvim" } } },
+	{ "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = { { "nvim-lua/plenary.nvim" } } },
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
