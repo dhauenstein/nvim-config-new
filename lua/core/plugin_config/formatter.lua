@@ -41,8 +41,15 @@ require("formatter").setup({
     javascript = {
       require("formatter.filetypes.javascript").jsbeautify
     },
-
-
+    markdown = {
+      require("formatter.filetypes.markdown").prettier
+    },
+    html = {
+      require("formatter.filetypes.html").prettier
+    },
+    go = {
+      require("formatter.filetypes.go").goimports
+    },
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {
@@ -52,3 +59,7 @@ require("formatter").setup({
 		},
 	},
 })
+
+vim.api.nvim_set_keymap('n', '<leader>f', ':Format<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>F', ':FormatWrite<CR>', { noremap = true, silent = true })
+
