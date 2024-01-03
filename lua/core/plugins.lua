@@ -52,6 +52,14 @@ local plugins = {
 	"HiPhish/rainbow-delimiters.nvim",
 	"mhartington/formatter.nvim",
 	"lewis6991/gitsigns.nvim",
+	{
+		"goolord/alpha-nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.startify").config)
+		end,
+	},
+  "mg979/vim-visual-multi"
 }
 
 local opts = {}
