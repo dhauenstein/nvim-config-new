@@ -23,7 +23,7 @@ vim.api.nvim_set_keymap("n", "<leader>lt", "<cmd>lua _term_toggle()<CR>", {norem
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
-vim.api.nvim_set_keymap('n', '<leader>t', ':ToggleTerm<CR>i', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>t', ':ToggleTerm<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('t', '<C-t>', [[<C-\><C-n>:ToggleTerm<CR>]], { noremap = true, silent = true })
 
 
