@@ -59,7 +59,8 @@ local plugins = {
 			require("alpha").setup(require("alpha.themes.startify").config)
 		end,
 	},
-  "mg979/vim-visual-multi"
+  "mg979/vim-visual-multi",
+  "ahmedkhalf/project.nvim"
 }
 
 local opts = {}
