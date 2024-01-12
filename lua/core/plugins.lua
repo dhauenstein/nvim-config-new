@@ -94,7 +94,8 @@ local plugins = {
       "rcarriga/nvim-notify",
     }
   },
-  "junegunn/limelight.vim"
+  "folke/twilight.nvim",
+  "folke/zen-mode.nvim",
 
 
   -- "ahmedkhalf/project.nvim"
