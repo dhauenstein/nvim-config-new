@@ -93,7 +93,8 @@ local plugins = {
       --   If not available, we use `mini` as the fallback
       "rcarriga/nvim-notify",
     }
-  }
+  },
+  "junegunn/limelight.vim"
 
 
   -- "ahmedkhalf/project.nvim"
