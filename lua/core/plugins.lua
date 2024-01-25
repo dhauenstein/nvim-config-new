@@ -23,7 +23,7 @@ local plugins = {
 	{
 		"nvim-telescope/telescope.nvim",
 		version = "0.1.4",
-		dependencies = { { "nvim-lua/plenary.nvim" } },
+		dependencies = { { "nim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter-textobjects" } },
 	},
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
@@ -95,7 +95,33 @@ local plugins = {
     }
   },
   "folke/twilight.nvim",
-  "folke/zen-mode.nvim",
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      plugins = {
+        alacritty = {
+        enabled = false,
+        font = "18", -- font size
+        },
+      }
+    }
+  },
+  {
+  'stevearc/aerial.nvim',
+  opts = {},
+  -- Optional dependencies
+  dependencies = {
+     "nvim-treesitter/nvim-treesitter",
+     "nvim-tree/nvim-web-devicons"
+  },
+    {
+  "andymass/vim-matchup",
+  setup = function()
+    vim.g.matchup_matchparen_offscreen = { method = "popup" }
+  end,
+},
+
+}
 
 
   -- "ahmedkhalf/project.nvim"
