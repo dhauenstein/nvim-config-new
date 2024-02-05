@@ -12,14 +12,19 @@ local on_attach = function(_,_)
   vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {})
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end
-
+local lspconfig = require('lspconfig')
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-require("lspconfig").lua_ls.setup {
+lspconfig.html.setup{capabilities = capabilities}
+lspconfig.pyright.setup{capabilities = capabilities}
+lspconfig.ansiblels.setup{capabilities = capabilities}
+lspconfig.terraformls.setup{capabilities = capabilities}
+lspconfig.vuels.setup{capabilities = capabilities}
+lspconfig.lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
-require'lspconfig'.gopls.setup{
+lspconfig.gopls.setup{
+  capabilities =  capabilities,
   settings= {
     gopls=  {
       completeUnimported = true,

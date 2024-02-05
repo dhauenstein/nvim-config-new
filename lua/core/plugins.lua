@@ -26,6 +26,9 @@ local plugins = {
 		dependencies = { { "nim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter-textobjects" } },
 	},
 	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",
 	"hrsh7th/cmp-nvim-lsp",
 	"L3MON4D3/LuaSnip",
 	"saadparwaiz1/cmp_luasnip",
@@ -120,6 +123,11 @@ local plugins = {
     vim.g.matchup_matchparen_offscreen = { method = "popup" }
   end,
 },
+    {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+}
 
 }
 
