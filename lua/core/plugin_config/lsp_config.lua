@@ -18,7 +18,7 @@ lspconfig.html.setup{capabilities = capabilities}
 lspconfig.pyright.setup{capabilities = capabilities}
 lspconfig.ansiblels.setup{capabilities = capabilities}
 lspconfig.terraformls.setup{capabilities = capabilities}
-lspconfig.vuels.setup{capabilities = capabilities}
+lspconfig.volar.setup{capabilities = capabilities}
 lspconfig.lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities
