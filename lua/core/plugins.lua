@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	"ellisonleao/gruvbox.nvim",
+  "rebelot/kanagawa.nvim",
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
 	{
